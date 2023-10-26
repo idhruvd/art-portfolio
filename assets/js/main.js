@@ -171,3 +171,11 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/**
+ * Jquery to fix nav active
+ */
+$('#navbar ul li a').click(function () {
+  $('#navbar ul li a').removeClass('active');
+  $(this).addClass('active');
+});
