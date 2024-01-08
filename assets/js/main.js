@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
-  });
+  }); 
 
   /**
    * Init swiper slider with 1 slide at once in desktop view
@@ -121,12 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     }
-  });
+  }); 
 
   /**
    * Init swiper slider with 3 slides at once in desktop view
    */
-  new Swiper('.slides-3', {
+   new Swiper('.slides-3', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 3,
       }
     }
-  });
+  }); 
 
   /**
    * Animation on scroll function and init
@@ -179,3 +179,9 @@ $('#navbar ul li a').click(function () {
   $('#navbar ul li a').removeClass('active');
   $(this).addClass('active');
 });
+
+const validator = require('validator');
+
+function validateEmail(email) {
+    return validator.isEmail(email);
+}
