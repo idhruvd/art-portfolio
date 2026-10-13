@@ -1,0 +1,300 @@
+/*--------------------------------------------------------------
+# Site overrides on top of the PhotoFolio template (main.css)
+--------------------------------------------------------------*/
+:root {
+  --color-muted: rgba(255, 255, 255, 0.72);
+  --color-line: rgba(255, 255, 255, 0.14);
+  --color-panel: #0e0f10;
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+h2,
+h3 {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+}
+
+/* Fixed header: keep in-page anchors clear of it */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+.header {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.header .logo h1 {
+  font-size: 28px;
+}
+
+/* The menu toggles are buttons for accessibility; strip button chrome */
+button.mobile-nav-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+/* Hero */
+.intro {
+  padding: 140px 0 80px;
+}
+
+.intro .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+  color: var(--color-primary);
+  margin-bottom: 14px;
+}
+
+.intro h2 {
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.12;
+  margin-bottom: 22px;
+}
+
+.lede {
+  color: var(--color-muted);
+  font-size: 18px;
+  max-width: 34em;
+}
+
+.intro-art img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.intro-caption {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--color-muted);
+  font-style: italic;
+  font-family: var(--font-secondary);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+.btn-solid,
+.btn-ghost {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn-solid {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-solid:hover {
+  background: #32cf93;
+  color: #fff;
+}
+
+.btn-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.btn-ghost:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Sections */
+.section {
+  padding: 90px 0;
+}
+
+.section-alt {
+  background: var(--color-panel);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.section h2 {
+  font-size: clamp(30px, 4vw, 40px);
+  margin-bottom: 18px;
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 50px;
+}
+
+.section-intro p,
+#about p {
+  color: var(--color-muted);
+}
+
+/* Paintings */
+.art {
+  margin-bottom: 0;
+}
+
+.art-frame {
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #111;
+}
+
+.art-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* show the whole painting, and the watermark with it */
+  transition: transform 0.5s;
+}
+
+.art-frame:hover img,
+.art-frame:focus-visible img {
+  transform: scale(1.04);
+}
+
+.art figcaption {
+  padding-top: 16px;
+}
+
+.art h3 {
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.art p {
+  color: var(--color-muted);
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.art .ask {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.art .ask i {
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.art .ask:hover i {
+  transform: translateX(4px);
+}
+
+/* Commission steps */
+.steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.steps li h3 {
+  font-size: 22px;
+  margin: 12px 0 8px;
+}
+
+.steps li p {
+  color: var(--color-muted);
+  font-size: 16px;
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  font-size: 20px;
+}
+
+/* Contact */
+.email-box {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 28px 0 18px;
+  padding: 14px 18px;
+  border: 1px solid var(--color-line);
+  border-radius: 12px;
+  max-width: 100%;
+}
+
+.email-link {
+  font-size: clamp(17px, 3.6vw, 22px);
+  font-weight: 600;
+  overflow-wrap: normal;
+}
+
+.copy-btn {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 14px;
+  transition: 0.2s;
+}
+
+.copy-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.contact-meta {
+  color: var(--color-muted);
+  font-size: 15px;
+}
+
+.footer {
+  margin-top: 0;
+}
+
+/* Keyboard focus that is visible on black */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+@media (max-width: 575px) {
+  .intro {
+    padding: 110px 0 50px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  .art-frame img,
+  .art .ask i {
+    transition: none;
+  }
+}

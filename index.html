@@ -5,9 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Ishita Art Gallery</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Ishita Goda · Original Paintings &amp; Commissions</title>
+  <meta name="description" content="Original mixed-media paintings by Ishita Goda, a Mumbai-born artist in Grand Rapids, Michigan. See the work, ask about a piece, or commission a painting.">
+  <meta property="og:title" content="Ishita Goda · Original Paintings">
+  <meta property="og:description" content="Warli folk scenes, autumn streets, a pour of red wine: colour-led mixed-media paintings from Grand Rapids, Michigan.">
+  <meta property="og:type" content="website">
+  <!-- TODO: once the domain is live, add og:url and an absolute og:image, e.g. https://ishitagoda.com/assets/img/art/buddha-lotus-1600.jpg -->
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -16,21 +19,16 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Template Main CSS File, then site overrides -->
   <link href="assets/css/main.css" rel="stylesheet">
-  <script
-  src="https://code.jquery.com/jquery-3.7.1.min.js"
-  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-  crossorigin="anonymous"></script>
+  <link href="assets/css/site.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,322 +36,243 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera"></i>
-        <h1>IG</h1>
+      <a href="#top" class="logo d-flex align-items-center me-auto me-lg-0">
+        <i class="bi bi-palette" aria-hidden="true"></i>
+        <h1>Ishita Goda</h1>
       </a>
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar" aria-label="Main">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-         <!-- <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#"><span>Gallery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="gallery.html">Nature</a></li>
-              <li><a href="gallery.html">People</a></li>
-              <li><a href="gallery.html">Architecture</a></li>
-              <li><a href="gallery.html">Animals</a></li>
-              <li><a href="gallery.html">Sports</a></li>
-              <li><a href="gallery.html">Travel</a></li>
-              <li class="dropdown"><a href="#"><span>Sub Menu</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Sub Menu 1</a></li>
-                  <li><a href="#">Sub Menu 2</a></li>
-                  <li><a href="#">Sub Menu 3</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="services.html">Services</a></li>-->
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#work">Paintings</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#commissions">Commissions</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
 
+      <!-- TODO: add social links here only once they point at real profiles, e.g.
       <div class="header-social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <a href="https://instagram.com/HANDLE" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </div> -->
+      <button type="button" class="mobile-nav-toggle mobile-nav-show bi bi-list" aria-label="Open menu"></button>
+      <button type="button" class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x" aria-label="Close menu"></button>
 
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center" data-aos="fade" data-aos-delay="1500">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 text-center">
-          <h2>I'm <span>Ishita Goda</span> a passionate Artist from Mumbai</h2>
-          <p>I am Ishita Goda, emerging artist from India, currently residing in Michigan, USA. 
-            My artistic journey has been that of an explorer. </p> 
-        <p>Although a chartered accountant by profession, 
-            art has always been my calling and a way of expressing myself.</p>
-          <p>Feelings, emotions and the scarcity of beauty in current times inspire me to paint. 
-            Often enjoying an "explosion" of colours, I find working with a limited palette equally thrilling. 
-            I work my way in mixed media painting-experimenting different techniques, brushstrokes and  textures. 
-            Not confining to of any particular genre I believe in translating my emotions to work without any restrictions.
-            Everyday is a new day of learning for me and I enjoy every moment of it.</p>
-           <p>As they say,
-              <q><em>Life is a great big Canvas, throw all the paint you can on it.</em></q></p>
-          <a href="#contact" class="btn-get-started">Available for Requests</a>
-        </div>
-      </div>
-    </div>
-  </section><!-- End Hero Section -->
+  <main id="top">
 
-  <main id="main" data-aos="fade" data-aos-delay="1500">
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
-      <div class="container-fluid">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/warli.JPG" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/warli.JPG" title="Gallery 1" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/tree.JPG" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/tree.JPG" title="Gallery 2" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-               <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/buddha.JPG" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/buddha.JPG" title="Gallery 3" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <!--<a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>-->
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/walkinfall.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/walkinfall.jpg" title="Gallery 4" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-               <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/wineglass.JPG" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/wineglass.JPG" title="Gallery 5" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-               <!-- <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
-              </div>
-            </div>
-          </div><!-- End Gallery Item -->
-          <!--<div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-6.jpg" title="Gallery 6" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>--><!-- End Gallery Item -->
-          <!--<div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-7.jpg" title="Gallery 7" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>--><!-- End Gallery Item -->
-          <!--<div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-8.jpg" title="Gallery 8" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>--><!-- End Gallery Item -->
-          <!--<div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-9.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-9.jpg" title="Gallery 9" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-10.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-10.jpg" title="Gallery 10" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-11.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-11.jpg" title="Gallery 11" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-12.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-12.jpg" title="Gallery 12" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>--><!-- End Gallery Item -->
-          <!--<div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-13.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-13.jpg" title="Gallery 13" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-14.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-14.jpg" title="Gallery 14" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-15.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-15.jpg" title="Gallery 15" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gallery-item h-100">
-              <img src="assets/img/gallery/gallery-16.jpg" class="img-fluid" alt="">
-              <div class="gallery-links d-flex align-items-center justify-content-center">
-                <a href="assets/img/gallery/gallery-16.jpg" title="Gallery 16" class="glightbox preview-link"><i class="bi bi-arrows-angle-expand"></i></a>
-                <a href="gallery-single.html" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div>
-          </div>--><!-- End Gallery Item -->
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
-
-
-    <section id="contact" class="contact"> <!--Contact section-->
+    <!-- ======= Hero ======= -->
+    <section class="intro">
       <div class="container">
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-3">
-            <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h4>Location:</h4>
-                <p>Grand Rapids, MI</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3">
-            <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h4>Email:</h4>
-                <p>getintouch@ishitagoda.com</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-lg-3">
-            <div class="info-item d-flex">
-              <i class="bi bi-phone flex-shrink-0"></i>
-              <div>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-        </div><!--End Contact details-->
-      
-
-      <div class="row justify-content-center mt-4">
-        <div class="col-lg-9">
-          <form action="mailto:getintouch@ishitagoda.com" method="post" enctype="text/plain">
-            <p>Note : <em>Do you want to ask me anything about an art or If you have any suggestions or Random tidbits, feel free 
-            to send an email and start a conversation. </em></p>
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6">
+            <p class="eyebrow">Original paintings · Grand Rapids, Michigan</p>
+            <h2>Paintings led by colour and feeling.</h2>
+            <p class="lede">
+              I'm Ishita Goda, a Mumbai-born artist working in mixed media. My work moves between Warli folk
+              scenes, quiet portraits of the Buddha, autumn streets and still life, sometimes in an explosion of
+              colour, sometimes in just two.
+            </p>
+            <div class="cta-row">
+              <a href="#work" class="btn-solid">See the paintings</a>
+              <a href="#commissions" class="btn-ghost">Commission a painting</a>
             </div>
           </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          <div class="col-lg-6">
+            <a href="assets/img/art/buddha-lotus-1600.jpg" class="glightbox intro-art" data-gallery="featured"
+               data-title="Buddha with Lotus"
+               data-description="A blue, meditating Buddha lit by a halo of yellow and green, with a pink lotus in the foreground.">
+              <img src="assets/img/art/buddha-lotus-800.jpg" width="800" height="623"
+                   alt="Painting of a meditating Buddha in deep blue and orange, haloed in yellow and green, with a pink lotus at lower left.">
+            </a>
+            <p class="intro-caption">Buddha with Lotus</p>
           </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="mt-3">
-            <button type="submit" class="bg-opacity-25">Send</button>
-          </div>
-          </form>
-        </div><!--End Contact form-->
+        </div>
       </div>
+    </section><!-- End Hero -->
+
+    <!-- ======= Paintings ======= -->
+    <!-- TODO for Ishita: for each piece add medium, size and year, plus "Available" / "Sold" / "Prints only".
+         Buyers look for this first. Titles below are working titles taken from the old captions; rename freely. -->
+    <section id="work" class="section">
+      <div class="container">
+        <header class="section-intro">
+          <h2>Paintings</h2>
+          <p>Tap any painting to see it full size. Each one is an original; if one speaks to you, ask about it.</p>
+        </header>
+
+        <div class="row gy-5">
+
+          <figure class="col-md-6 col-xl-4 art">
+            <a href="assets/img/art/warli-1600.jpg" class="glightbox art-frame" data-gallery="work"
+               data-title="Warli" data-description="Hundreds of Warli figures dancing in a spiral across a flame-orange ground, finished with coloured tassels.">
+              <img src="assets/img/art/warli-800.jpg" loading="lazy" width="800" height="667"
+                   alt="Warli-style painting: black stick figures dancing in a large spiral among huts, trees and animals on a fiery orange and red background, with coloured tassels along the bottom.">
+            </a>
+            <figcaption>
+              <h3>Warli</h3>
+              <p>A whole village in celebration, painted in the Warli folk style of Maharashtra.</p>
+              <a class="ask" href="mailto:getintouch@ishitagoda.com?subject=Question%20about%20%22Warli%22">Ask about this piece <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-6 col-xl-4 art">
+            <a href="assets/img/art/walk-in-fall-1600.jpg" class="glightbox art-frame" data-gallery="work"
+               data-title="Walk in Fall" data-description="Two figures under a red umbrella on a path lined with blazing autumn trees.">
+              <img src="assets/img/art/walk-in-fall-800.jpg" loading="lazy" width="800" height="797"
+                   alt="Painting of two figures under a red umbrella walking down a pale lavender path between rows of red, orange and yellow autumn trees.">
+            </a>
+            <figcaption>
+              <h3>Walk in Fall</h3>
+              <p>Two people, one red umbrella, and a path of falling leaves.</p>
+              <a class="ask" href="mailto:getintouch@ishitagoda.com?subject=Question%20about%20%22Walk%20in%20Fall%22">Ask about this piece <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-6 col-xl-4 art">
+            <a href="assets/img/art/tree-in-bloom-1600.jpg" class="glightbox art-frame" data-gallery="work"
+               data-title="Tree in Bloom" data-description="A tree heavy with white blossom against a thickly textured, multicoloured ground.">
+              <img src="assets/img/art/tree-in-bloom-800.jpg" loading="lazy" width="798" height="800"
+                   alt="Painting of a dark slender tree covered in white blossoms, set against thick vertical strokes of red, pink, lime and orange.">
+            </a>
+            <figcaption>
+              <h3>Tree in Bloom</h3>
+              <p>White blossom against a riot of textured colour.</p>
+              <a class="ask" href="mailto:getintouch@ishitagoda.com?subject=Question%20about%20%22Tree%20in%20Bloom%22">Ask about this piece <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-6 col-xl-4 art">
+            <a href="assets/img/art/wine-glass-1600.jpg" class="glightbox art-frame" data-gallery="work"
+               data-title="Wine Glass" data-description="Red wine pouring into a tilted glass over a textured neutral background.">
+              <img src="assets/img/art/wine-glass-800.jpg" loading="lazy" width="800" height="800"
+                   alt="Painting of red wine pouring into a tilted wine glass, over a textured background of beige, white and grey with flecks of red.">
+            </a>
+            <figcaption>
+              <h3>Wine Glass</h3>
+              <p>A limited palette: one pour of red against texture and neutrals.</p>
+              <a class="ask" href="mailto:getintouch@ishitagoda.com?subject=Question%20about%20%22Wine%20Glass%22">Ask about this piece <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </figcaption>
+          </figure>
+
+          <figure class="col-md-6 col-xl-4 art">
+            <a href="assets/img/art/buddha-lotus-1600.jpg" class="glightbox art-frame" data-gallery="work"
+               data-title="Buddha with Lotus" data-description="A blue, meditating Buddha lit by a halo of yellow and green, with a pink lotus in the foreground.">
+              <img src="assets/img/art/buddha-lotus-800.jpg" loading="lazy" width="800" height="623"
+                   alt="Painting of a meditating Buddha in deep blue and orange, haloed in yellow and green, with a pink lotus at lower left.">
+            </a>
+            <figcaption>
+              <h3>Buddha with Lotus</h3>
+              <p>Stillness in blue, with a lotus in bloom.</p>
+              <a class="ask" href="mailto:getintouch@ishitagoda.com?subject=Question%20about%20%22Buddha%20with%20Lotus%22">Ask about this piece <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            </figcaption>
+          </figure>
+
+        </div>
       </div>
-    </section><!--End Contact section-->
-  </main><!-- End #main -->
+    </section><!-- End Paintings -->
+
+    <!-- ======= About ======= -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- TODO: add a real photo of Ishita (in the studio or with a painting) in a col-lg-4 beside this text.
+               A face is the single biggest trust signal on an artist's site. -->
+          <div class="col-lg-8">
+            <h2>About Ishita</h2>
+            <p>
+              I grew up in Mumbai and now live and paint in Grand Rapids, Michigan. I'm a chartered accountant
+              by profession, but painting has always been my calling, the way I express what I feel.
+            </p>
+            <p>
+              What moves me to paint is emotion, and the beauty that's easy to miss these days. Some pieces are an
+              explosion of colour; others hold to a limited palette, which I find just as thrilling. I work in
+              mixed media and keep experimenting with technique, brushstroke and texture.
+            </p>
+            <p>
+              I don't tie myself to one genre, which is why Warli folk scenes hang beside autumn streets and a pour
+              of red wine. I'm still learning with every canvas, and I enjoy every moment of it.
+            </p>
+            <!-- TODO: if true, add one line of proof here: exhibitions, shows, collectors, or "Paintings now in homes in India and the US". -->
+          </div>
+        </div>
+      </div>
+    </section><!-- End About -->
+
+    <!-- ======= Commissions ======= -->
+    <section id="commissions" class="section">
+      <div class="container">
+        <header class="section-intro">
+          <h2>Commission a painting</h2>
+          <p>Want something for a particular wall, person or memory? I take a limited number of commissions.</p>
+        </header>
+
+        <ol class="steps row gy-4">
+          <li class="col-md-4">
+            <span class="step-num">1</span>
+            <h3>Tell me the idea</h3>
+            <p>Email me what you have in mind: the subject, roughly what size, the colours you love, and where it will hang. Photos help.</p>
+          </li>
+          <li class="col-md-4">
+            <span class="step-num">2</span>
+            <h3>Agree on the details</h3>
+            <p>I'll reply with my thoughts on the piece, a price and a timeline, so you know exactly what to expect before I begin.</p>
+          </li>
+          <li class="col-md-4">
+            <span class="step-num">3</span>
+            <h3>I paint it</h3>
+            <p>Then I paint it and we arrange how it gets to you.</p>
+          </li>
+        </ol>
+        <!-- TODO for Ishita: add a starting price ("Commissions start at $___") and typical turnaround,
+             plus whether you ship and where. Visitors hesitate to email when they can't guess the cost. -->
+
+        <p class="text-center mt-5">
+          <a href="mailto:getintouch@ishitagoda.com?subject=Commission%20enquiry&amp;body=Hi%20Ishita%2C%0A%0AWhat%20I%20have%20in%20mind%3A%0ARough%20size%3A%0AColours%20I%20like%3A%0AWhere%20it%20will%20hang%3A%0A"
+             class="btn-solid">Start a commission enquiry</a>
+        </p>
+      </div>
+    </section><!-- End Commissions -->
+
+    <!-- ======= Contact ======= -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Get in touch</h2>
+            <p class="lede">
+              Questions about a painting, a commission, or just want to say hello? Email me directly.
+              I read every message myself.
+            </p>
+            <!-- TODO: add a reply time only if you can keep it, e.g. "I usually reply within two days." -->
+
+            <div class="email-box">
+              <a href="mailto:getintouch@ishitagoda.com" class="email-link">getintouch@<wbr>ishitagoda.com</a>
+              <button type="button" class="copy-btn" data-copy="getintouch@ishitagoda.com">
+                <i class="bi bi-clipboard" aria-hidden="true"></i> <span>Copy</span>
+              </button>
+            </div>
+            <p class="contact-meta"><i class="bi bi-geo-alt" aria-hidden="true"></i> Grand Rapids, Michigan, USA</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact -->
+
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright">
-        Copyright <strong><span>Ishita Goda</span></strong>. All Rights Reserved
+        © <span id="year">2026</span> Ishita Goda. All paintings are original work by the artist; please ask before reproducing them.
       </div>
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader">
-    <div class="line"></div>
-  </div>
-
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/site.js"></script>
 </body>
 
 </html>
