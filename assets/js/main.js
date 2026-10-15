@@ -171,17 +171,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
-
-/**
- * Jquery to fix nav active
- */
-$('#navbar ul li a').click(function () {
-  $('#navbar ul li a').removeClass('active');
-  $(this).addClass('active');
-});
-
-const validator = require('validator');
-
-function validateEmail(email) {
-    return validator.isEmail(email);
-}
